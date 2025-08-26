@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canteen Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style type="text/css">
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+   <section class="img">
+    <div class="header">
+
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#MENU">MENU</a></li>
+                <li><a href="#CONTACT">CONTACT</a></li>
+                <li><a href="#">RATE US</a></li>
+            </ul>
+       </div>
+        <div class="content" id="home">
+            <nav>
+                <p><i>WELCOME TO</i> </p>
+                <h3>LUCKY RESTRO</h3>
+            </nav>
+        </div>
+    
+    
+    <input type="checkbox" id="menuToggle">
+    <label for="menuToggle" class="menu-btn">≡</label>
+
+    <div class="slide">
+        <h2 class="side-menu">MENU</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#MENU">Menu</a></li>
+            <li><a href="#CONTACT">Contact</a></li>
+            <li>Rating</li>
+        </ul>
+    </div>
+</section>
+   
+
+    <section class="pages">
+        <main class="main" id="MENU">
+            <div class="section-title">
+                <h4>MENU</h4>
+                <p><i>WE SERVE THE BEST</i></p>
+            </div>
+            <section class="menus page2">
+                <div class="menu-column">
+                    <h4>TODAY'S SPECIAL</h4>
+                    <div class="single-menu">
+                        <img src="images/burger.jpg" alt="">
+                        <div class="menu-content">
+                            <h5>BURGER <span>$50</span></h5>
+                            <p>Chicken burger</p>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <img src="images/biryani.jpg" alt="">
+                        <div class="menu-content">
+                            <h5>BIRYANI<span>$50</span></h5>
+                            <p>Chicken biryani</p>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <img src="images/pizza.jpg" alt="">
+                        <div class="menu-content">
+                            <h5>PIZZA <span>$50</span></h5>
+                            <p>Chicken pizza</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-column">
+                    <h4>BREAKFAST</h4>
+                    <div class="single-menu">
+                        <img src="images/idli.webp" alt="">
+                        <div class="menu-content">
+                            <h5>IDLI <span>$50</span></h5>
+                            <p>Masala idli</p>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <img src="images/dosa.webp" alt="">
+                        <div class="menu-content">
+                            <h5>DOSA<span>$50</span></h5>
+                            <p>Masala dosa</p>
+                            <p>Onion dosa</p>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <img src="images/bonda.webp" alt="">
+                        <div class="menu-content">
+                            <h5>BONDA <span>$50</span></h5>
+                            <p>Mysore bonda</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-column">
+                    <h4>LUNCH</h4>
+                    <div class="single-menu">
+                        <img src="images/friedrice.webp" alt="">
+                        <div class="menu-content">
+                            <h5>FRIED RICE <span>$50</span></h5>
+                            <p>Veg, egg & chicken</p>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <img src="images/biryani.jpg" alt="">
+                        <div class="menu-content">
+                            <h5>Biryani<span>$50</span></h5>
+                            <p>Chicken biryani</p>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <img src="images/vegmeals.webp" alt="">
+                        <div class="menu-content">
+                            <h5>VEG MEALS <span>$50</span></h5>
+                            <p>Rice, sambar, papad, curd</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Contact Page Section -->
+        <section class ="cnt-new" id="CONTACT">
+            <div class="section-title">
+                <h4>CONTACT US</h4>
+                <p><i>We'd love to hear from you!</i></p>
+            </div>
+            <form class = " cnt-frm">
+                <div class =" insd">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class =" insd">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class =" insd">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

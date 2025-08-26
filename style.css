@@ -1,0 +1,474 @@
+@import url('https://fontsfree.net/poppins-extrabold-font-download.html');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'mangolaline',Mangolaine;
+  box-sizing: border-box;
+}
+@media (max-width: 768px){
+body{
+  min-height: 300px;
+}
+div.logo p {
+  font-size: 30px;
+  font-weight:bold ;
+  align-content: center;
+  float:left;
+  color: rgb(120, 227, 246);
+  font-style:initial;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  padding: 5px 40px;
+}
+.header ul {
+    float: right;
+    margin: 0;
+    padding: 0; /* Remove any potential default margins/padding */
+}
+
+.header li {
+    display: inline-block;
+    list-style: none; /* Remove default list styles */
+    padding: 10px; /* Provide space around items */
+}
+
+.header li a {
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 10px 15px; /* Adjust padding for better hover area */
+    color: white;
+    text-decoration: none;
+    display: inline-block; /* Make links fill the <li> */
+}
+
+.header li a:hover {
+    color: rgb(3, 2, 2); /* Change the text color on hover */
+    transition: all 0.4s ease; /* Smooth transition for hover */
+}
+
+.content{
+  position:absolute;
+  top: 10%;
+  left: 10%;
+  text-align:start;
+  font-size: 450%;
+  padding: 0px 0px ;
+  align-content:normal;
+ 
+}
+.content h3{
+  padding: 10px 300px;
+  font-style: italic;
+  color:#ffffff;
+   text-align:left;
+  font-size:150px;
+  font-weight: 0;
+  color: #ffffff;
+  padding: 40px 40px;
+  padding-left: 50px;
+}
+
+.content p{
+  text-align:left;
+  font-size: 50px;
+  font-weight: 20;
+  color:#ffdd00;
+  left:500px;
+  
+ 
+}
+
+/* Hide default checkbox */
+#menuToggle {
+  display: none;
+}
+
+/* Sidebar */
+.slide {
+  height: 60%;
+  width: 200px;
+  border-radius: 50px;
+  background-color: #b88748;
+  position: fixed;     /* stays in place */
+  top: -350px;
+  left: -200px;        /* hidden by default */
+  padding: 80px 10px;
+  box-shadow: 2px 0px 8px rgba(227, 155, 47, 0.968);
+  z-index: 1000;
+  transition: left 0.5s ease;  /* smooth slide */
+
+.side-menu{
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+}
+.slide ul {
+  list-style: none;   /* remove bullets */
+  padding: 0;
+  margin: 0;
+}
+
+.slide ul li {
+  margin-bottom: 20px;
+  padding:20px;   /* space between items vertically */
+  font-size: 20px;   
+  color:#000000;    /* adjust text size */
+  cursor: pointer;
+  transition: 0.3s;
+ 
+}
+.slide ul li a {
+  color: #000000;
+}
+/* optional: remove extra gap after last item */
+.slide ul li:last-child {
+  margin-bottom: 0;
+}
+
+/* Hover effect */
+.slide ul li:hover {
+  color: rgb(255, 255, 255);              /* text turns white */
+  background-color: #e18697; /* purple background */
+  padding: 5px 10px;         /* add padding when hovered */
+  border-radius: 6px;        /* rounded edges */
+}
+
+
+
+/* When checkbox is checked → show sidebar */
+#menuToggle:checked ~ .slide {
+  left: 0;
+  padding:20px;
+}
+
+/* Content area (shift when sidebar opens) */
+.content {
+  margin-left: 0;
+  padding: 50px;
+  transition: margin-left 0.3s ease;
+}
+
+#menuToggle:checked ~ .content {
+  margin-left: 200px;   /* same as sidebar width */
+}
+/* Menu button style */
+.menu-btn {
+    height: 30px;
+    width: auto; /* Changed to auto to fit text */
+    position: fixed; /* Fixed position */
+    top: -390px; /* Positioning at the top */
+    left: 10px; /* Positioning at the left */
+    background: rgb(0, 0, 0); /* Initial background color */
+    color: rgb(216, 0, 0); /* Initial text color */
+    font-weight: bold; /* Bold text */
+    padding: 15px 15px; /* Padding properly set */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 6px; /* Rounded corners */
+    z-index: 1100; /* Ensure it's above other content */
+    transition: background 0.3s ease; /* Smooth transition for background */
+}
+/* Menu button hover effect */
+.menu-btn:hover {
+    background: #e4b563; /* Hover background color */
+    color: rgb(0, 0, 0); /* Hover text color */
+}
+
+
+/* Click (active state) */
+.menu-btn:active {
+  transform: scale(0.9) rotate(0deg); /* shrink + tilt */
+}
+.img {
+    position: relative; /* Allows the pseudo-element to be positioned relative to this element */
+    height: 100vh; 
+    overflow: hidden; /* Ensure no overflow */
+}
+
+/* Pseudo-element for the blurred background */
+.img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('bg3.jpg'); /* Your background image */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    filter: blur(5px); /* Adjust blur level as needed */
+    z-index: 1; /* Behind the content */
+}
+
+.img > * {
+    position: relative; 
+    z-index: 2; /* Bring content above the blur */
+    color: white; /* Ensure text is visible; adjust as needed */
+}
+
+/* Adjust text color to ensure readability over the blurred background */
+h1, p {
+    color: white; /* Change this based on your design */
+}
+.pages{
+  margin-top: 0px;
+  background-color: #ffffff;
+
+}
+/* Background Image for Menu Page */
+.pages {
+    background-image: url('bg3.jpg'); /* Menu image */
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    padding: 80px; 
+    height:135vh;
+    min-height: 1800px;
+    color: white; /* Text color */
+    position: relative; /* Required for pseudo-element */
+}
+/* Add a pseudo element for the blur effect */
+.pages::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: inherit; /* Use the same background image */
+    background-size: inherit; 
+    background-position: inherit; 
+    background-repeat: inherit;
+    filter: blur(10px); /* Adjust the blur level here */
+    z-index: 0; /* Behind the content */
+}
+/* Ensure content is on top of the blurred background */
+.pages > * {
+    position: relative; /* Bring content above the blur */
+    z-index: 1; /* Above the pseudo element */
+}
+.main{
+  position: relative;
+  top: 0px;
+  padding:50px;
+  color:rgb(233, 255, 69);
+  background-color: #4e454f;
+  /* background-color: rgb(50, 237, 218); */
+}
+.section-title {
+  text-align: center;
+  margin: 20px;
+  color: rgb(0, 0, 0);
+
+}
+.section-title p{
+  text-align: center;
+  margin: 50px;
+  position: relative;
+  top: -40px;
+  color: rgb(255, 255, 255);
+}
+.section-title h4{
+  text-transform: capitalize;
+  font-size: 35px;
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  margin: 10px;
+  color: rgb(0, 0, 0);
+}
+.section-title h4:before{
+  content:"";
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background-color: #000000;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.menus {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex-grow: 1;
+  margin-top: 40px;  /* ✅ Proper spacing */
+}
+
+.menu-column {
+  width: auto;
+  flex: 1; /* Flexible width */
+  min-width: 200px; /* Minimum width for columns */
+  margin: 10px; /* Space between columns */
+}
+
+
+.menu-column h4{
+  text-transform: capitalize;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.menu-column h4:before{
+  content:"";
+  position:absolute;
+  width: 210px;
+  height: 3px;
+  background-color: #000000;
+  bottom: 0;
+  left: 0%;
+}
+
+.single-menu{
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.single-menu img{
+  width: 200px;
+  height: 100px;
+  border-radius:80px;
+  padding: 3px;
+  margin-right: 15px;
+  transition: .3s;
+}
+
+.single-menu:hover img{
+  transform:scale3d(1.1,1.1,1.1);
+}
+
+.single-menu .menu-content h5{
+  text-transform: capitalize;
+  font-size:22px;
+  font-weight: 500;
+  border-bottom: 1px dashed #000000;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.single-menu .menu-content h5 span{
+  color: rgb(0, 0, 0);
+  float: right;
+  font-weight: 600;
+  font-style: italic;
+  margin-left: 15px;
+}
+/* MENU PAGE OUR MENU AND PARAGRAPGH TEXT*/
+.section-title h4 {
+    font-size: 80px; 
+    color: #ffffff; /* Darker color for headings */
+    margin-bottom: 10px; 
+  
+}
+
+.section-title p {
+    font-size: 18px;
+    color: #ffffff; /* Grey color for subheading */
+    margin-bottom: 30px; 
+}
+#MENU{
+  background-color: #a58448;
+  height:850px;
+  width: 1350px;
+  padding:10px 20px;
+  
+}
+
+/* Contact Section Styles */
+#CONTACT {
+    background-color: #efc5f4; /* Light background for contrast */
+    padding: 50px 0;  /* Top and bottom padding */
+    text-align: center; /* Center text */
+    color: rgb(0, 0, 0);
+    background-image: url('bg3.jpg'); /* Contact image */
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    position: relative; /* Required for pseudo-element */
+    margin-top: 50px;
+}
+/* Add a pseudo element for the blur effect */
+#CONTACT::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: inherit; /* Use the same background image */
+    background-size: cover; 
+    background-position: inherit; 
+    background-repeat: inherit;
+    filter: blur(10px); /* Adjust the blur level here */
+    z-index: 0; /* Behind the content */
+}
+/* Ensure content is on top of the blurred background */
+#CONTACT > * {
+    position: relative; /* Bring content above the blur */
+    z-index: 1; /* Above the pseudo element */
+}
+
+
+form {
+    max-width: 600px; /* Max width for form */
+    margin: 0 auto; /* Center form */
+    background: white; /* White background */
+    padding: 20px; /* Inner padding */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+form .insd {
+    margin-bottom: 15px; /* Space between fields */
+}
+
+form label {
+    display: block; /* Block display for better alignment */
+    margin-bottom: 5px; 
+    font-weight: bold; /* Bold labels */
+    color: #555; /* Dark grey for labels */
+}
+
+form input, form textarea {
+    width: 100%; /* Full width for inputs */
+    padding: 12px; /* Padding inside input boxes */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Round edges */
+    font-size: 16px; /* Font size within inputs */
+    transition: border-color 0.3s; /* Smooth border color transition */
+}
+
+form input:focus, form textarea:focus {
+    border-color: #5483aa; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+form button {
+    padding: 12px; /* Button padding */
+    background-color: #aa71d3; /* Button color */
+    color: rgb(255, 255, 255); /* Button text color */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 18px; /* Button text size */
+    transition: background 0.3s; /* Smooth background transition */
+}
+
+form button:hover {
+    background-color: #5a3db3; /* Darker button color on hover */
+}
+.cnt-frm{
+  color: #000000;
+  background-color: #b3923d;
+}
+.insd{
+  color:white;
+  background-color: #d66060;
+}
+}
